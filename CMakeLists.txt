@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(exceptions-rt)
+project(exception-rt)
 # Require C++23
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -52,7 +52,6 @@ install(
   FILES "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
   DESTINATION lib/cmake/${PROJECT_NAME}
 )
-
 
 # Test executable
 add_executable(${PROJECT_NAME}_test test/exception_rt_test.cpp)

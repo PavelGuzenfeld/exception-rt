@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>exceptions-rt</name>
+  <name>exception-rt</name>
   <version>0.1.0</version>
   <description>Cmake library</description>
   <maintainer email="pavelguzenfeld@gmail.com">Pavel Guzenfeld</maintainer>

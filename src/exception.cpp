@@ -1,4 +1,4 @@
-#include "exceptions-rt/exception.hpp"
+#include "exception-rt/exception.hpp"
 #include <array>     // std::array
 #include <exception> // std::terminate_handler
 #include <span>      // std::span
