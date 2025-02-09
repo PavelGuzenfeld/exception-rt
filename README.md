@@ -1,2 +1,2 @@
-# exceptions-rt
-Exceptions override with predictable allocations
+# exception-rt
+Exception override with predictable allocations
