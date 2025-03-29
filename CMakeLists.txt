@@ -58,7 +58,7 @@ add_executable(${PROJECT_NAME}_test test/exception_rt_test.cpp)
 target_include_directories(${PROJECT_NAME}_test PRIVATE include)
 target_link_libraries(${PROJECT_NAME}_test PRIVATE fmt)
 
-set_debug_options(${PROJECT_NAME}_test)
+set_warnings_and_errors(${PROJECT_NAME}_test)
 enable_sanitizers(${PROJECT_NAME}_test)
 
 # Export the target
