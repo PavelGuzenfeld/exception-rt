@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 project(exception-rt)
+
 # Require C++23
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -67,3 +68,7 @@ install(
     EXPORT ${PROJECT_NAME}Targets
     DESTINATION bin
 )
+
+# Handle "Manually-specified variables were not used by the project" warning.
+unset(CATKIN_INSTALL_INTO_PREFIX_ROOT)
+unset(CATKIN_SYMLINK_INSTALL)
