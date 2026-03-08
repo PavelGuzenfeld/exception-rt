@@ -25,7 +25,7 @@ thread_local std::size_t hint = 0;
 // write-based abort that avoids pulling in fprintf / __gxx_personality_v0
 [[noreturn]] void fatal(const char *msg) noexcept
 {
-    (void)::write(STDERR_FILENO, msg, __builtin_strlen(msg));
+    [[maybe_unused]] auto _ = ::write(STDERR_FILENO, msg, __builtin_strlen(msg));
     __builtin_trap();
 }
 
