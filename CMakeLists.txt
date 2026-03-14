@@ -7,6 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Library target — STATIC so weak-symbol overrides get linked
 add_library(${PROJECT_NAME} STATIC src/exception.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC
